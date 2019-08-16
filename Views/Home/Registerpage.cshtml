@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Register";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<style>
+    #from-input {
+        border: 1px solid red;
+        border-radius: 5px;
+    }
+</style>
+
+<form action="/Home/Register" method="POST">
+    <p>
+        <input type="text" name="username" class="form-control col-lg-3" required/>
+    </p>
+
+    <p>
+        <input type="text" name="account" class="form-control col-lg-3" required/>
+    </p>
+
+    <p>
+        <input type="text" name="password" class="form-control col-lg-3" required/>
+    </p>
+
+    <p>
+        <button id="btn" class="btn btn-primary btn-lg">Register Now</button>
+    </p>
+</form>
